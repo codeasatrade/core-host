@@ -1,0 +1,21 @@
+{
+  "appId": "com.codeasatrade.host",
+  "productName": "CAT Host",
+  "files": ["dist-electron", "dist-react"],
+  "extraResources": ["dist-electron/preload.cjs"],
+  "icon": "./desktopIcon.png",
+  "directories": {
+    "output": "build"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  },
+  "mac": {
+    "target": "dmg",
+    "category": "public.app-category.utility"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  }
+}
